@@ -6,7 +6,7 @@ export default (cities = defaultCities, action) => {
   const {type, payload} = action;
   switch(type) {
     case SEARCH_CITY_INFO:
-      return cities.concat(payload.city);
+      return cities.concat(payload);
   }
 
   return cities;
