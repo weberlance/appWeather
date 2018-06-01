@@ -7,7 +7,11 @@ export default (cities = defaultCities, action) => {
   const {type, payload} = action;
   switch(type) {
     case SEARCH_CITY_INFO:
-      return [payload.data, ...cities].slice(0, maxLimit);
+      if (payload.data) {
+        return [payload.data, ...cities].slice(0, maxLimit);
+      }
+      return cities;
+        // console.log(payload.error);
       // return cities.concat(payload);
   }
 
