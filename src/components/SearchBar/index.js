@@ -6,7 +6,7 @@ import {cityInfoSearch} from '../../AC';
 class SearchBar extends React.Component {
 
   state = {
-    searchCity: ''
+    searchCity: 'new york'
   }
 
   onChangeHandle = (e) => {
