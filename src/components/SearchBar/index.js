@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
 
   onSubmitHandler = (e) => {
     e.preventDefault();
+    if (this.state.searchCity === '') return;
     this.props.cityInfoSearch(this.state.searchCity);
     this.setState({ searchCity: '' })
   }
