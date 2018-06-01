@@ -1,0 +1,1 @@
+export const SEARCH_CITY_INFO = 'SEARCH_CITY_INFO';
