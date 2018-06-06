@@ -6,7 +6,7 @@ import {cityInfoSearch} from '../../AC';
 class SearchBar extends React.Component {
 
   state = {
-    searchCity: 'new york'
+    searchCity: ''
   }
 
   onChangeHandle = (e) => {
@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
         <input
           type="text"
           className="form-control"
-          placeholder="Enter the city"
+          placeholder="Enter the US city"
           value={this.state.searchCity}
           onChange={this.onChangeHandle}
         />
